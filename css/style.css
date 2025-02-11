@@ -4,6 +4,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 body {
@@ -13,6 +15,7 @@ body {
     color: #24292f;
     line-height: 1.6;
     font-size: 16px;
+    margin-top: 0;
 }
 
 header {
@@ -22,6 +25,9 @@ header {
     margin-bottom: 40px;
     padding: 20px 0;
     border-bottom: 1px solid #eaecef;
+    position: relative;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .site-title {
@@ -29,6 +35,11 @@ header {
     font-weight: 400;
     color: #24292f;
     text-decoration: none;
+}
+
+nav {
+    margin-top: 0;
+    padding-top: 0;
 }
 
 nav a {
@@ -81,6 +92,66 @@ nav a:hover {
     font-size: 14px;
     margin-bottom: 4px;
 }
+
+/* AI link styling */
+.ai-link-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    /* Increased for larger shard */
+    margin-left: 40px;
+    /* Move the whole container right */
+}
+
+.ai-link {
+    position: relative;
+    color: white !important;
+    z-index: 2;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 8px 16px;
+}
+
+.ai-shard {
+    position: absolute;
+    top: -90px;
+    /* Extend further for larger size */
+    left: 65%;
+    transform: translateX(-50%);
+    width: 180px;
+    /* 1.5x wider */
+    height: 210px;
+    /* 1.5x taller */
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Keep the rest of your nav styling the same */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 24px;
+    text-decoration: none;
+    color: #24292f;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+/* Hover effects */
+.ai-link-container:hover .ai-shard {
+    filter: brightness(1.2);
+}
+
+.ai-link-container:hover .ai-link {
+    text-decoration: none;
+}
+
 
 /* Patents/Research styles */
 .patents-section {
@@ -162,3 +233,4 @@ a:hover {
     margin-top: 12px;
     line-height: 1.5;
 }
+

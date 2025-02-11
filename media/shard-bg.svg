@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <defs>
+    <linearGradient id="neuralGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d1faa;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#ff00ff;stop-opacity:0.7"/>
+    </linearGradient>
+    
+    <!-- Network pattern -->
+    <pattern id="networkPattern" x="0" y="0" width="15" height="15" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="15" y2="15" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+      <line x1="15" y1="0" x2="0" y2="15" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  
+  <!-- Larger inverted triangle -->
+  <path d="M0,0 L100,0 L50,120 Z" 
+        fill="url(#neuralGradient)"/>
+  <path d="M0,0 L100,0 L50,120 Z" 
+        fill="url(#networkPattern)"
+        style="mix-blend-mode: overlay"/>
+        
+  <!-- Neural connection lines -->
+  <path d="M20,20 L80,20 M50,0 L50,75 M30,40 L70,40" 
+        stroke="rgba(255,255,255,0.2)" 
+        stroke-width="0.5" 
+        fill="none"/>
+</svg>
