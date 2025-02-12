@@ -61,11 +61,18 @@ nav a:hover {
     text-align: left;
 }
 
+.profile-image-section {
+    background: linear-gradient(315deg, rgba(45, 31, 170, 0.1) 0%, rgba(255, 0, 255, 0.2) 100%);
+    width: 100%;
+    margin-bottom: 40px;
+}
+
 .profile-image {
+    display: block;
+    margin: 0 auto;
     width: 300px;
     height: 300px;
     object-fit: cover;
-    margin-bottom: 40px;
     border-radius: 4px;
 }
 
@@ -178,15 +185,18 @@ nav a {
 }
 
 /* Common elements */
-h1,
-h2 {
+h1 {
+    font-size: 24px;
+    margin-top: 40px;
     font-weight: 200;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 h2 {
     font-size: 24px;
     margin-top: 40px;
+    font-weight: 200;
+    margin-bottom: 20px;
 }
 
 p {
